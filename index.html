@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>HIGHER STUDIES PORTAL</title>
+    <style media="screen">
+      body{
+        background-color: black;
+      }
+    </style>
+    <link rel="stylesheet" href="style.css">
+    <!--<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous"> !-->
+    <script src="https://kit.fontawesome.com/c8ac5fbbab.js" crossorigin="anonymous"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+  </head>
+  <body>
+    <div class="logo">
+      <h1 class="logo" href="index.html">Voyages Extraordinaries</h1>
+    </div>
+    <h2 style="text-align: Center">Seek your own north star!</h2>
+    <div class=Center align='center'>
+      <a href="explore.html"alt="EXPLORE!"><button class="button-73" role="button">Explore!</button></a>
+    </div>
+    <footer>
+      <div class="main-content">
+        <div class="left box">
+          <h2>About us</h2>
+          <div class="content">
+            <p>I'm Eashaan Manohar from III CSE-B. Me and my team have created this website for all the sleep deprived dreamers out there who dream to carve their niche in abroad by purusing higher studies, but find it difficult to navigate through the exhaustive process of applying to universities. Hope you find this useful in acheiving your goals!. Be restless & relentless! Stay hungry, stay foolish! No dream is ever to big and no dreamer is ever to small!</p>
+            <div class="social">
+              <a href="https://facebook.com"><span class="fab fa-facebook-f"></span></a>
+              <a href="https://twitter.com"><span class="fab fa-twitter"></span></a>
+              <a href="https://instagram.com"><span class="fab fa-instagram"></span></a>
+              <a href="https://www.youtube.com/c/Freecodecamp"><span class="fab fa-youtube"></span></a>
+              <a href="https://in.linkedin.com/in/eashaan-manohar-17b976228?trk=people-guest_people_search-card"><span class="fab fa-linkedin"></span></a>
+            </div>
+          </div>
+        </div>
+        <div class="center box">
+          <h2>Address</h2>
+          <div class="content">
+            <div class="place">
+              <span class="fas fa-map-marker-alt"></span>
+              <span class="text">Rajalakshmi Engineering College, Thandalam</span>
+            </div>
+            <div class="phone">
+              <span class="fas fa-phone-alt"></span>
+              <span class="text">+91 9176602002</span>
+            </div>
+            <div class="email">
+              <span class="fas fa-envelope"></span>
+              <span class="text">eashaanmano@gmail.com</span>
+            </div>
+          </div>
+        </div>
+        <div class="right box">
+          <h2>Contact us</h2>
+          <div class="content">
+            <form onsubmit="sendEmail(); reset(); return false;">
+              <div class="email">
+                <div class="text">Email *</div>
+                <input style="color: black" type="email" required>
+              </div>
+              <div class="msg">
+                <div class="text">Message *</div>
+                <textarea  style="color: black" rows="2" cols="25" required></textarea>
+              </div>
+              <div class="btn">
+                <button class="button-14" type="submit">Send</button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
+    <script>
+      function sendEmail(){
+        Email.send({
+            Host : "smtp.gmail.com",
+            Username : "wizecrack02@gmail.com",
+            Password : "manoeashaan123",
+            To : 'wizecrack02@gmail.com',
+            From : "USER",
+            Subject : "Enquiry By User",
+            Body : "Email: "+document.getElementById("email").value
+                  + "<br> Message: " + document.getElementById("message").value
+        }).then(
+          message => alert(message)
+        );
+      }
+    </script>
+  </body>
+</html>

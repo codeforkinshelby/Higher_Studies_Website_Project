@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Academics</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1,0">
+    <link rel="stylesheet" type="text/css" href="style1.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+  </head>
+  <body>
+    <header>
+      <a href="#" class="logo">FLY-HIGH</a>
+      <ul class="navigation">
+        <li><a href="#" class="active">Home</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Info</a></li>
+        <li><a href="enquire.html">Enquire</a></li>
+      </ul>
+    </header>
+    <section class="parallax">
+      <h2 id="text">AIM HIGHER!</h2>
+      <img src="C:\xampp\htdocs\phpscript\monutain_01.png" id="m1">
+      <img src="C:\xampp\htdocs\phpscript\trees_02.png" id="t2">
+      <img src="C:\xampp\htdocs\phpscript\monutain_02.png" id="m2">
+      <img src="C:\xampp\htdocs\phpscript\trees_01.png" id="t1">
+      <img src="C:\xampp\htdocs\phpscript\man.png" id="m">
+      <img src="C:\xampp\htdocs\phpscript\plants.png" id="plants">
+    </section>
+    <section class="sec">
+      <h2>Higher Studies Services</h2>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+    </section>
+    <div class="bodi">
+      <div class="contain1">
+        <div class="box">
+          <h2>01</h2>
+          <h3>SOP & LOR Review</h3>
+          <p>A complete perusal of your SOP and LOR for getting the dream admit!. Offers insights and valuable suggestions to make a stellar SOP!</p>
+        </div>
+        <div class="box">
+          <h2>02</h2>
+          <h3>Mock Test</h3>
+          <p>Dedicated proctored mock test for GRE, GMAT, IELTS, TOEFL along with AI generated test reports!</p>
+        </div>
+        <div class="box">
+          <h2>03</h2>
+          <h3>Complete Admit Buddy</h3>
+          <p>All-in-one solution for your higher studies preparation. From the time of applying to getting your dream admit. We've got them covered for you!</p>
+        </div>
+      </div>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.3/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.3/ScrollTrigger.min.js"></script>
+    <script>
+      gsap.from("#m1",{
+        ScrollTrigger : {
+          scrub: true
+        },
+        y: 100,
+      })
+      gsap.from("#m2",{
+        ScrollTrigger : {
+          scrub: true
+        },
+        y: 50,
+      })
+      gsap.from("#t2",{
+        ScrollTrigger : {
+          scrub: true
+        },
+        x: -50,
+      })
+      gsap.from("#t1",{
+        ScrollTrigger : {
+          scrub: true
+        },
+        x: 50,
+      })
+      gsap.from("#man",{
+        ScrollTrigger : {
+          scrub: true
+        },
+        x: -250,
+      })
+      gsap.from("#plants",{
+        ScrollTrigger : {
+          scrub: true
+        },
+        x: -50,
+      })
+      gsap.from("#text",{
+        ScrollTrigger : {
+          scrub: true
+        },
+        x: 600,
+      })
+    </script>
+  </body>
+</html>
